@@ -1,0 +1,13 @@
+package com.sttl.formbuilder2.dto;
+
+import com.sttl.formbuilder2.model.enums.FieldType;
+import lombok.Data;
+import java.util.Map;
+
+@Data
+public class FieldDefinitionDTO {
+    private String label;
+    private FieldType type;
+    private boolean required;
+    private Map<String, Object> validation; // min, max, regex
+}
